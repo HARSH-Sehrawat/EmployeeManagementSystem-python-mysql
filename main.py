@@ -24,7 +24,7 @@ def Add_Employ():
         press = input("Press Any Key To Continue..")
         Add_Employ()
     Name = input("Enter Employee Name: ")
-    # checking If Employee Name is Exit Or Not
+    # checking If Employee Name is Exists Or Not
     if (check_employee_name(Name) == True):
         print("Employee Name Already Exists\nTry Again..")
         press = input("Press Any Key To Continue..")
@@ -59,7 +59,7 @@ def Add_Employ():
     press = input("Press Any Key To Continue..")
     menu()
 # Function To Check if Employee With
-# given Name Exist or not
+# given Name Exists or not
 def check_employee_name(employee_name):
     # query to select all Rows from
     # employee(empdata) table
@@ -78,7 +78,7 @@ def check_employee_name(employee_name):
     else:
         return False
 # Function To Check if Employee With
-# given Id Exist or not
+# given Id Exists or not
 def check_employee(employee_id):
      # query to select all Rows from
     # employee(empdata) table
@@ -123,7 +123,7 @@ def Display_Employ():
 def Update_Employ():
     print("{:>60}".format("-->> Update Employee Record <<--\n"))
     Id = input("Enter Employee Id: ")
-    # checking If Employee Id is Exit Or Not
+    # checking If Employee Id is Exists Or Not
     if (check_employee(Id) == False):
         print("Employee Record Not exists\nTry Again")
         press = input("Press Any Key To Continue..")
@@ -161,7 +161,7 @@ def Update_Employ():
 def Promote_Employ():
     print("{:>60}".format("-->> Promote Employee Record <<--\n"))
     Id = input("Enter Employee Id: ")
-    # checking If Employee Id is Exit Or Not
+    # checking If Employee Id is Exists Or Not
     if (check_employee(Id) == False):
         print("Employee Record Not exists\nTry Again")
         press = input("Press Any Key To Continue..")
@@ -195,7 +195,7 @@ def Promote_Employ():
 def Remove_Employ():
     print("{:>60}".format("-->> Remove Employee Record <<--\n"))
     Id = input("Enter Employee Id: ")
-    # checking If Employee Id is Exit Or Not
+    # checking If Employee Id is Exists Or Not
     if (check_employee(Id) == False):
         print("Employee Record Not exists\nTry Again")
         press = input("Press Any Key To Continue..")
@@ -218,7 +218,7 @@ def Remove_Employ():
 def Search_Employ():
     print("{:>60}".format("-->> Search Employee Record <<--\n"))
     Id = input("Enter Employee Id: ")
-    # checking If Employee Id is Exit Or Not
+    # checking If Employee Id is Exists Or Not
     if (check_employee(Id) == False):
         print("Employee Record Not exists\nTry Again")
         press = input("Press Any Key To Continue..")
